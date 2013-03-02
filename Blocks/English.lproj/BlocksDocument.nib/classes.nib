@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                decreaseDepth = id; 
+                decreaseHeight = id; 
+                decreaseWidth = id; 
+                increaseDepth = id; 
+                increaseHeight = id; 
+                increaseWidth = id; 
+            }; 
+            CLASS = BlocksUIController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {depthSlider = NSSlider; heightSlider = NSSlider; widthSlider = NSSlider; }; 
+            SUPERCLASS = NSObjectController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MyDocument; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }
+    ); 
+    IBVersion = 1; 
+}
