@@ -8,15 +8,14 @@
 
 #import "BlocksDoc.h"
 
-#import "BAPrototype+Blocks.h"
-#import "BlocksMainView.h"
-#import "BlocksUtilities.h"
-
 #import <BAFoundation/NSManagedObjectContext+BAAdditions.h>
 
 #import <BAScene/BAMesh.h>
 #import <BAScene/BAPartition.h>
 #import <BAScene/BATexture.h>
+
+#import "BlocksMainView.h"
+#import "NSManagedObjectContext+Blocks.h"
 
 
 @interface BlocksDoc ()
@@ -36,7 +35,6 @@
 - (id)init {
 	self = [super init];
 	if(nil != self) {
-		[NSManagedObjectContext setActiveContext:[self managedObjectContext]];
 		[[self managedObjectContext] setUndoManager:nil];
 	}
 	return self;
@@ -66,7 +64,6 @@
 
 - (void)close {
 	mainView.camera.drawDelegate = nil;
-	[NSManagedObjectContext setActiveContext:nil];
 	[super close];
 }
 
@@ -95,24 +92,25 @@
 //	mainView.camera.depth = NO;
 //	mainView.camera.testOn = YES;
 //	mainView.camera.lightsOn = NO;
-
-	[mainView setNeedsDisplay:YES];
+    
+    mainView.camera.drawDelegate = [self.managedObjectContext stage];
+    [mainView enableDisplayLink];
 }
 
 
 #pragma mark Accessors
 - (BAProp *)selectedProp {
-	return [[BAActiveContext objectsForEntityNamed:@"Prop" matchingValue:@"BAPrototype:tetrahedron" forKey:@"name"] lastObject];
+	return [[self.managedObjectContext objectsForEntityNamed:@"Prop" matchingValue:@"BAPrototype:tetrahedron" forKey:@"name"] lastObject];
 }
 
 
 #pragma mark Private
 - (void)addInitialContent {
     
-    BAGroup *sample = [BlocksUtilities sampleBlocks];
+    BAGroup *sample = [self.managedObjectContext sampleBlocks];
     
     sample.name = @"Blocks:Sample";
-    [[BAStage stage] addGroup:sample];
+    [[self.managedObjectContext stage] addGroup:sample];
 }
 
 @end

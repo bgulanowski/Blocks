@@ -17,6 +17,7 @@
 #import <BAScene/BAMesh.h>
 #import <BAScene/BAPolygon.h>
 #import <BAScene/BAPoint.h>
+#import <BAScene/BATuple.h>
 
 
 @implementation BlocksBrowser
@@ -62,7 +63,7 @@
 
 static inline NSUInteger InverseRelationshipCount(NSManagedObject *object, NSString *targetEntityName, NSString *inverseKey) {
     
-    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
+    NSFetchRequest *fetch = [[[NSFetchRequest alloc] init] autorelease];
     
     fetch.entity = [NSEntityDescription entityForName:targetEntityName inManagedObjectContext:object.managedObjectContext];
     fetch.predicate = [NSPredicate predicateWithFormat:@"%K=%@", inverseKey, object];

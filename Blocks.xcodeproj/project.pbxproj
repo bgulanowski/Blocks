@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0589211175FCE400BED553 /* BAPrototype+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E05891F1175FCE400BED553 /* BAPrototype+Blocks.h */; };
-		4E0589221175FCE400BED553 /* BAPrototype+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0589201175FCE400BED553 /* BAPrototype+Blocks.m */; };
-		4E05892F1176111500BED553 /* BAMesh+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E05892D1176111500BED553 /* BAMesh+Blocks.h */; };
-		4E0589301176111500BED553 /* BAMesh+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E05892E1176111500BED553 /* BAMesh+Blocks.m */; };
 		4E1B6C330FD17D7400AE4803 /* BlocksDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1B6C310FD17D7400AE4803 /* BlocksDoc.h */; };
 		4E1B6C340FD17D7400AE4803 /* BlocksDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1B6C320FD17D7400AE4803 /* BlocksDoc.m */; };
 		4E1B6C3B0FD17DA000AE4803 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1B6C3A0FD17DA000AE4803 /* CoreData.framework */; };
@@ -21,6 +17,7 @@
 		4EAFFF6C1368FDC6003D4E15 /* icoearth.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 4EAFFF6B1368FDC6003D4E15 /* icoearth.bmp */; };
 		4EED8F120FDAA85B00AE33D4 /* BlocksDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EED8F100FDAA85B00AE33D4 /* BlocksDelegate.h */; };
 		4EED8F130FDAA85B00AE33D4 /* BlocksDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EED8F110FDAA85B00AE33D4 /* BlocksDelegate.m */; };
+		8422120E176A7AED00BED020 /* NSManagedObjectContext+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422120D176A7A7300BED020 /* NSManagedObjectContext+Blocks.m */; };
 		84EFE8B816E28E7D0053A6F0 /* BAFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 84EFE8B616E28E7D0053A6F0 /* BAFoundation.framework */; };
 		84EFE8B916E28E7D0053A6F0 /* BAScene.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 84EFE8B716E28E7D0053A6F0 /* BAScene.framework */; };
 		8D15AC290486D014006FF6A4 /* Blocks_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF750370BD2300C91783 /* Blocks_Prefix.pch */; };
@@ -30,8 +27,6 @@
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		B68E53F70995484C00689BD5 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68E53F60995484C00689BD5 /* OpenGL.framework */; };
-		B6AAB73B14C36EB70007A0A4 /* BlocksUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AAB73914C36EB60007A0A4 /* BlocksUtilities.h */; };
-		B6AAB73C14C36EB70007A0A4 /* BlocksUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAB73A14C36EB60007A0A4 /* BlocksUtilities.m */; };
 		B6AAB74114C37BCE0007A0A4 /* BlocksBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AAB73E14C37BCE0007A0A4 /* BlocksBrowser.h */; };
 		B6AAB74214C37BCE0007A0A4 /* BlocksBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AAB73F14C37BCE0007A0A4 /* BlocksBrowser.m */; };
 		B6AAB74314C37BCE0007A0A4 /* BlocksBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AAB74014C37BCE0007A0A4 /* BlocksBrowser.xib */; };
@@ -64,10 +59,6 @@
 		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/BlocksMenu.nib; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		32DBCF750370BD2300C91783 /* Blocks_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blocks_Prefix.pch; sourceTree = "<group>"; };
-		4E05891F1175FCE400BED553 /* BAPrototype+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BAPrototype+Blocks.h"; sourceTree = "<group>"; };
-		4E0589201175FCE400BED553 /* BAPrototype+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BAPrototype+Blocks.m"; sourceTree = "<group>"; };
-		4E05892D1176111500BED553 /* BAMesh+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BAMesh+Blocks.h"; sourceTree = "<group>"; };
-		4E05892E1176111500BED553 /* BAMesh+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BAMesh+Blocks.m"; sourceTree = "<group>"; };
 		4E1B6C310FD17D7400AE4803 /* BlocksDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksDoc.h; sourceTree = "<group>"; };
 		4E1B6C320FD17D7400AE4803 /* BlocksDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksDoc.m; sourceTree = "<group>"; };
 		4E1B6C3A0FD17DA000AE4803 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -78,6 +69,8 @@
 		4EAFFF6B1368FDC6003D4E15 /* icoearth.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = icoearth.bmp; sourceTree = "<group>"; };
 		4EED8F100FDAA85B00AE33D4 /* BlocksDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksDelegate.h; sourceTree = "<group>"; };
 		4EED8F110FDAA85B00AE33D4 /* BlocksDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksDelegate.m; sourceTree = "<group>"; };
+		8422120C176A7A7300BED020 /* NSManagedObjectContext+Blocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Blocks.h"; sourceTree = "<group>"; };
+		8422120D176A7A7300BED020 /* NSManagedObjectContext+Blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Blocks.m"; sourceTree = "<group>"; };
 		84EFE8B116E28E5C0053A6F0 /* BAFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BAFoundation.framework; sourceTree = "<group>"; };
 		84EFE8B216E28E5C0053A6F0 /* BAScene.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BAScene.framework; sourceTree = "<group>"; };
 		84EFE8B416E28E5C0053A6F0 /* BAFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BAFoundation.framework; sourceTree = "<group>"; };
@@ -87,8 +80,6 @@
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Blocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68E53F60995484C00689BD5 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		B6AAB73914C36EB60007A0A4 /* BlocksUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksUtilities.h; sourceTree = "<group>"; };
-		B6AAB73A14C36EB60007A0A4 /* BlocksUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksUtilities.m; sourceTree = "<group>"; };
 		B6AAB73E14C37BCE0007A0A4 /* BlocksBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksBrowser.h; sourceTree = "<group>"; };
 		B6AAB73F14C37BCE0007A0A4 /* BlocksBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksBrowser.m; sourceTree = "<group>"; };
 		B6AAB74014C37BCE0007A0A4 /* BlocksBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlocksBrowser.xib; sourceTree = "<group>"; };
@@ -177,10 +168,8 @@
 		4E05891E1175FCD100BED553 /* BAScene Additions */ = {
 			isa = PBXGroup;
 			children = (
-				4E05891F1175FCE400BED553 /* BAPrototype+Blocks.h */,
-				4E0589201175FCE400BED553 /* BAPrototype+Blocks.m */,
-				4E05892D1176111500BED553 /* BAMesh+Blocks.h */,
-				4E05892E1176111500BED553 /* BAMesh+Blocks.m */,
+				8422120C176A7A7300BED020 /* NSManagedObjectContext+Blocks.h */,
+				8422120D176A7A7300BED020 /* NSManagedObjectContext+Blocks.m */,
 			);
 			path = "BAScene Additions";
 			sourceTree = "<group>";
@@ -206,8 +195,6 @@
 				4EED8F110FDAA85B00AE33D4 /* BlocksDelegate.m */,
 				4E30E8A512E3323E005C5B2D /* BlocksMainView.h */,
 				4E30E8A612E3323E005C5B2D /* BlocksMainView.m */,
-				B6AAB73914C36EB60007A0A4 /* BlocksUtilities.h */,
-				B6AAB73A14C36EB60007A0A4 /* BlocksUtilities.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -281,10 +268,7 @@
 				8D15AC290486D014006FF6A4 /* Blocks_Prefix.pch in Headers */,
 				4E1B6C330FD17D7400AE4803 /* BlocksDoc.h in Headers */,
 				4EED8F120FDAA85B00AE33D4 /* BlocksDelegate.h in Headers */,
-				4E0589211175FCE400BED553 /* BAPrototype+Blocks.h in Headers */,
-				4E05892F1176111500BED553 /* BAMesh+Blocks.h in Headers */,
 				4E30E8A712E3323E005C5B2D /* BlocksMainView.h in Headers */,
-				B6AAB73B14C36EB70007A0A4 /* BlocksUtilities.h in Headers */,
 				B6AAB74114C37BCE0007A0A4 /* BlocksBrowser.h in Headers */,
 				B6AAB74714C3D5490007A0A4 /* GroupInspector.h in Headers */,
 				B6AAB74D14C3D8BD0007A0A4 /* EntityInspector.h in Headers */,
@@ -320,7 +304,7 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = B6FA5DAF0982C4C00018806B /* Build configuration list for PBXProject "Blocks" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -363,11 +347,9 @@
 			files = (
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				4E1B6C340FD17D7400AE4803 /* BlocksDoc.m in Sources */,
+				8422120E176A7AED00BED020 /* NSManagedObjectContext+Blocks.m in Sources */,
 				4EED8F130FDAA85B00AE33D4 /* BlocksDelegate.m in Sources */,
-				4E0589221175FCE400BED553 /* BAPrototype+Blocks.m in Sources */,
-				4E0589301176111500BED553 /* BAMesh+Blocks.m in Sources */,
 				4E30E8A812E3323E005C5B2D /* BlocksMainView.m in Sources */,
-				B6AAB73C14C36EB70007A0A4 /* BlocksUtilities.m in Sources */,
 				B6AAB74214C37BCE0007A0A4 /* BlocksBrowser.m in Sources */,
 				B6AAB74814C3D5490007A0A4 /* GroupInspector.m in Sources */,
 				B6AAB74E14C3D8BD0007A0A4 /* EntityInspector.m in Sources */,
@@ -481,16 +463,21 @@
 		B6FA5DB00982C4C00018806B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/Vendor/Frameworks/$(CONFIGURATION)\"";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/BAScene Additions\"";
 			};
 			name = Debug;
@@ -498,16 +485,20 @@
 		B6FA5DB10982C4C00018806B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(PROJECT_DIR)/Vendor/Frameworks/$(CONFIGURATION)\"";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.8;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/BAScene Additions\"";
 			};
 			name = Release;

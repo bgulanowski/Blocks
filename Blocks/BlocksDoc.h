@@ -7,7 +7,7 @@
 //
 
 
-@class BlocksMainView;
+@class BlocksMainView, BAProp;
 
 @interface BlocksDoc : NSPersistentDocument {
 
