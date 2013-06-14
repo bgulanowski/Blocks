@@ -59,7 +59,7 @@
     
     browser.view.frame = [browserPanel.contentView frame];
     browserPanel.contentView = browser.view;
-    
+
     [self startUpdates:^BOOL(BAScene *scene, NSTimeInterval interval) {
         BlocksDoc *document = (BlocksDoc *)[[NSDocumentController sharedDocumentController] currentDocument];
         [document.mainView.camera update:interval];

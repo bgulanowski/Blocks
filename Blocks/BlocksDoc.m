@@ -107,7 +107,7 @@
 #pragma mark Private
 - (void)addInitialContent {
     
-    BAGroup *sample = [self.managedObjectContext sampleBlocks];
+    BAPropGroup *sample = [self.managedObjectContext sampleBlocks];
     
     sample.name = @"Blocks:Sample";
     [[self.managedObjectContext stage] addGroup:sample];

@@ -390,9 +390,9 @@
 	return block;
 }
 
-- (BAGroup *)sampleBlocks {
+- (BAPropGroup *)sampleBlocks {
 	
-	BAGroup *blocks = [self groupWithSuperGroup:nil];
+	BAPropGroup *blocks = [self groupWithSuperGroup:nil];
 	NSArray *protos = [NSArray arrayWithObjects:
 					   @"icosahedron",
 					   @"dodecahedron",
@@ -443,9 +443,9 @@
     return blocks;
 }
 
-- (BAGroup *)planets {
+- (BAPropGroup *)planets {
     
-	BAGroup *blocks = [self groupWithSuperGroup:nil];
+	BAPropGroup *blocks = [self groupWithSuperGroup:nil];
     BATransform *transform = [self transform];
     
 	[transform rotateX:-45 y:0 z:0];
@@ -460,10 +460,10 @@
 }
 
 
-- (BAGroup *)boxOfBoxes {
+- (BAPropGroup *)boxOfBoxes {
     
 	// Make a big box of cubes
-	BAGroup *boxes = [self groupWithSuperGroup:nil];
+	BAPropGroup *boxes = [self groupWithSuperGroup:nil];
 	BAPrototype *proto = [self block44];
     BATransform *xform = [self scaleWithX:5.0f y:5.0f z:5.0f];
 	NSInteger cx = 8, cy = 5, cz = 8, i = 0, j = 0, k = 0;

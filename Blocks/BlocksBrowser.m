@@ -10,7 +10,7 @@
 
 #import "EntityInspector.h"
 
-#import <BAScene/BAGroup.h>
+#import <BAScene/BAPropGroup.h>
 #import <BAScene/BAProp.h>
 #import <BAScene/BAPrototype.h>
 #import <BAScene/BAPrototypeMesh.h>
@@ -71,7 +71,7 @@ static inline NSUInteger InverseRelationshipCount(NSManagedObject *object, NSStr
     return [object.managedObjectContext countForFetchRequest:fetch error:NULL];
 }
 
-@implementation BAGroup (BlocksBrowsing)
+@implementation BAPropGroup (BlocksBrowsing)
 
 - (NSSet *)browserChildren {
     NSSet *props =  self.props;

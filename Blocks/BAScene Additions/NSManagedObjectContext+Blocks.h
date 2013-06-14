@@ -44,8 +44,8 @@
 - (BAMesh *)block43Mesh;
 - (BAMesh *)block44Mesh; // cube
 
-- (BAGroup *)sampleBlocks;
-- (BAGroup *)planets;
-- (BAGroup *)boxOfBoxes;
+- (BAPropGroup *)sampleBlocks;
+- (BAPropGroup *)planets;
+- (BAPropGroup *)boxOfBoxes;
 
 @end
