@@ -446,7 +446,7 @@
 - (BAPropGroup *)planets {
     
 	BAPropGroup *blocks = [self groupWithSuperGroup:nil];
-    BATransform *transform = [self transform];
+    BATransform *transform = [self insertBATransform];
     
 	[transform rotateX:-45 y:0 z:0];
 	[blocks addPropsObject:[self propWithName:@"earth" prototype:[self earth] transform:transform]];
