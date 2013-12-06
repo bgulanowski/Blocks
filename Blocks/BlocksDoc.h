@@ -12,7 +12,7 @@
 @interface BlocksDoc : NSPersistentDocument {
 
 	BlocksMainView *mainView;
-	BAScene *scene;
+	NSTimer *timer;
 }
 
 @property (nonatomic, assign) IBOutlet BlocksMainView *mainView;

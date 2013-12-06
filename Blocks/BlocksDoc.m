@@ -97,6 +97,10 @@
     
     mainView.camera.drawDelegate = [self.managedObjectContext stage];
     [mainView enableDisplayLink];
+	
+	NSWindow *mainWindow = mainView.window;
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidBecomeMain:) name:NSWindowDidBecomeMainNotification object:mainWindow];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidResignMain:) name:NSWindowDidResignMainNotification object:mainWindow];
 }
 
 
@@ -107,6 +111,22 @@
 
 
 #pragma mark Private
+
+- (void)update:(NSTimer *)timer {
+	[mainView.camera update:1./30.];
+}
+
+- (void)windowDidBecomeMain:(NSNotification *)notification {
+	timer = [[NSTimer timerWithTimeInterval:1./30. target:self selector:@selector(update:) userInfo:nil repeats:YES] retain];
+	[[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)windowDidResignMain:(NSNotification *)notification {
+	[timer invalidate];
+	[timer release];
+	timer = nil;
+}
+
 - (void)addInitialContent {
     
 	BAStage *stage = [self.managedObjectContext stage];
