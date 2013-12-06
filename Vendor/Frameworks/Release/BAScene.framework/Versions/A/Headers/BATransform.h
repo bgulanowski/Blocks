@@ -9,7 +9,9 @@
 
 #import <BAScene/_BATransform.h>
 
-#import "BASceneTypes.h"
+#import <BAScene/BASceneTypes.h>
+
+@class BACamera;
 
 @interface BATransform : _BATransform {
 	BOOL dirty;
@@ -28,7 +30,7 @@
 - (void)rebuild;
 - (void)reset;
 
-- (void)apply;
+- (void)applyWithCamera:(BACamera *)camera;
 
 @end
 

@@ -7,11 +7,12 @@
 //
 
 
-@class BlocksMainView, BAProp;
+@class BlocksMainView, BAScene, BAProp;
 
 @interface BlocksDoc : NSPersistentDocument {
 
-	BlocksMainView *mainView;	
+	BlocksMainView *mainView;
+	BAScene *scene;
 }
 
 @property (nonatomic, assign) IBOutlet BlocksMainView *mainView;

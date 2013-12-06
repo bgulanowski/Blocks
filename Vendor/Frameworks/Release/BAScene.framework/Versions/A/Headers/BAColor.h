@@ -7,12 +7,6 @@
 //
 
 
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-#import <OpenGLES/ES1/gl.h>
-#else
-#import <OpenGL/gl.h>
-#endif
-
 #import <BAScene/_BAColor.h>
 #import <BAScene/BASceneTypes.h>
 

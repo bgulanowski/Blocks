@@ -19,6 +19,7 @@
 - (void)removeProp:(BAProp *)aProp;
 - (void)addGroup:(BAPropGroup *)aGroup;
 - (void)removeGroup:(BAPropGroup *)aGroup;
+- (void)createPartitionRoot;
 
 - (void)update:(NSTimeInterval)interval;
 

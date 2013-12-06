@@ -8,6 +8,8 @@
 
 #import <CoreData/CoreData.h>
 
+@class BAPrototype, BAMesh, BAPropGroup;
+
 @interface NSManagedObjectContext (Blocks)
 
 - (BAPrototype *)block22; // tetrahedron

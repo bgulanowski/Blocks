@@ -8,12 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import <BAScene/BAScene.h>
-
-
 @class BACameraSetup, BlocksBrowser;
 
-@interface BlocksDelegate : BAScene {
+@interface BlocksDelegate : NSObject {
 
 	NSWindow *cameraSetupPanel;	
 	BACameraSetup *cameraSetup;

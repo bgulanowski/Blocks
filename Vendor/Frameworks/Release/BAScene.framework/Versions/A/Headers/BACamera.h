@@ -42,7 +42,7 @@ typedef struct BACameraOptionFlags {
     unsigned int reserved2:9;
 } BACameraOptions;
 
-
+extern NSString *BAStringForPolygonMode(GLenum mode);
 extern NSString *BACameraOptionsToString(BACameraOptions options);
 
 typedef struct BACameraValueChanges {
@@ -54,7 +54,7 @@ typedef struct BACameraValueChanges {
 } BACameraColorChanges;
 
 
-@class BACamera, BAColor;
+@class BACamera, BAColor, BATransform;
 
 @protocol BAPropContainer<NSObject>
 - (NSArray *)sortedPropsForCamera:(BACamera *)camera;
@@ -146,9 +146,8 @@ typedef struct BACameraValueChanges {
 @property(nonatomic,assign) GLfloat yRotRate;
 @property(nonatomic,assign) GLfloat zRotRate;
 
-// GL_POINT, GL_LINE or GL_FILL
-@property (nonatomic) GLenum frontMode;
-@property (nonatomic) GLenum backMode;
+@property (nonatomic) BAPolygonMode frontMode;
+@property (nonatomic) BAPolygonMode backMode;
 
 @property (nonatomic) BAPointf focus;
 @property (nonatomic) GLfloat blur;
@@ -157,7 +156,11 @@ typedef struct BACameraValueChanges {
 @property (nonatomic) BAColorf lightColor;
 @property (nonatomic) BAColorf lightShine;
 
-#if ! TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
+@property (nonatomic, assign) UIColor *uibgColor;
+@property (nonatomic, assign) UIColor *uilColor;
+@property (nonatomic, assign) UIColor *uilShine;
+#else
 @property (nonatomic, assign) NSColor *nsbgColor;
 @property (nonatomic, assign) NSColor *nslColor;
 @property (nonatomic, assign) NSColor *nslShine;
@@ -177,8 +180,10 @@ typedef struct BACameraValueChanges {
 @property (nonatomic, getter = isBlurOn) BOOL blurOn;
 #endif
 
+#if ! TARGET_OS_IPHONE
 @property (nonatomic, getter = isFrontLineModeOn) BOOL frontLineModeOn;
 @property (nonatomic, getter = isBackLineModeOn) BOOL backLineModeOn;
+#endif
 
 @property(nonatomic) GLfloat frameRate;
 
@@ -194,6 +199,8 @@ typedef struct BACameraValueChanges {
 // rotate relative to the current rotation in absolute values
 -(void)rotateX:(GLfloat)x y:(GLfloat)y;
 
+- (void)applyTransform:(BATransform *)transform;
+
 - (void)setup;
 - (void)update:(NSTimeInterval)interval;
 - (void)capture;
@@ -203,4 +210,3 @@ typedef struct BACameraValueChanges {
 - (void)logGLState;
 
 @end
-

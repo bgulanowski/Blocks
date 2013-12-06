@@ -12,6 +12,8 @@
 
 #import <BAScene/BAMesh.h>
 #import <BAScene/BAPartition.h>
+#import <BAScene/BAScene.h>
+#import <BAScene/BAStage.h>
 #import <BAScene/BATexture.h>
 
 #import "BlocksMainView.h"
@@ -107,10 +109,12 @@
 #pragma mark Private
 - (void)addInitialContent {
     
+	BAStage *stage = [self.managedObjectContext stage];
     BAPropGroup *sample = [self.managedObjectContext sampleBlocks];
     
+	[stage createPartitionRoot];
     sample.name = @"Blocks:Sample";
-    [[self.managedObjectContext stage] addGroup:sample];
+    [stage addGroup:sample];
 }
 
 @end

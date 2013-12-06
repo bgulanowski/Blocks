@@ -6,4 +6,5 @@
     #import <Cocoa/Cocoa.h>
 	#import <CoreData/CoreData.h>
     #import <BAScene/BAScene.h>
+	#import <OpenGL/gl.h>
 #endif
