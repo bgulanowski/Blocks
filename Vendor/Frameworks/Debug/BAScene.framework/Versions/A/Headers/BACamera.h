@@ -3,7 +3,7 @@
 //  BAScene
 //
 //  Created by Brent Gulanowski on 11/10/08.
-//  Copyright 2008 Bored Astronaut. All rights reserved.
+//  Copyright (c) 2008-2014 Bored Astronaut. All rights reserved.
 //
 
 
@@ -161,9 +161,6 @@ typedef struct BACameraValueChanges {
 @property (nonatomic, assign) UIColor *uilColor;
 @property (nonatomic, assign) UIColor *uilShine;
 #else
-@property (nonatomic, assign) NSColor *nsbgColor;
-@property (nonatomic, assign) NSColor *nslColor;
-@property (nonatomic, assign) NSColor *nslShine;
 #endif
 
 @property (nonatomic) BALocationf lightLoc;
@@ -180,10 +177,8 @@ typedef struct BACameraValueChanges {
 @property (nonatomic, getter = isBlurOn) BOOL blurOn;
 #endif
 
-#if ! TARGET_OS_IPHONE
 @property (nonatomic, getter = isFrontLineModeOn) BOOL frontLineModeOn;
 @property (nonatomic, getter = isBackLineModeOn) BOOL backLineModeOn;
-#endif
 
 @property(nonatomic) GLfloat frameRate;
 
@@ -199,7 +194,7 @@ typedef struct BACameraValueChanges {
 // rotate relative to the current rotation in absolute values
 -(void)rotateX:(GLfloat)x y:(GLfloat)y;
 
-- (void)applyTransform:(BATransform *)transform;
+- (void)applyViewTransform:(BAMatrix4x4f * const)transform;
 
 - (void)setup;
 - (void)update:(NSTimeInterval)interval;
