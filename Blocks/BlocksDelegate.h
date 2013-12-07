@@ -3,7 +3,7 @@
 //  Blocks
 //
 //  Created by Brent Gulanowski on 06/06/09.
-//  Copyright 2009 Marketcircle Inc. All rights reserved.
+//  Copyright 2009-2014 Bored Astronaut. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
